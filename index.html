@@ -3,13 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
     <title>Challenges HTML Inputs</title>
+    <style>
+      body {
+        background-color: #c1c9c7;
+        font-family: "roboto", sans-serif;
+      }
+
+      h1, h2 {
+font-family: "roboto", sans-serif;
+font-size: 16px;
+font-weight: normal;
+
+      }
+
+      .html-input {
+        background: white;
+        max-width: 600px;
+        margin: 45px auto;
+        box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+        border-radius: 16px;
+        padding: 30px;
+      }
+button {
+  background-color: rgb(224, 226, 201);
+  border-radius: 4px;
+
+
+}
+
+    </style>
   </head>
   <body>
     <div class="html-input">
-      <label for="first-name">What is on your mind?</label>
-      <input type="text" id="first-name" />
+      <form action="" method="post">
+      <label for="ask-mind">Challenge 1 - What is on your mind?</label>
+      <input type="text" id="ask-mind" name="ask-mind" />
+      <button type="submit">Submit</button>
+      <p></p>
+      <div>
+      <label for="birth">Challenge 2 - What is your birth date?</label>
+      <input type="date" placeholder="dd/mm/yyyy" id="birth" name="birth" />
+      <button type="submit">Submit</button>
+      </div>
+      <p></p>
+      <div>
+      <h1>Challenge 3 - What is your favorite primary color?</h1>
+      <input type="radio" name="color" id="Blue" checked /><label for=>Blue</label>
+      <input type="radio" name="color" id="Red" /><label for=>Red</label>
+      <input type="radio" name="color" id="Yellow" /><label for=>Yellow</label>
+      <button type="submit">Submit</button>
+      </div>
+      <p></p>
+      <div>
+      <h2>Challenge 4 - How do you like to travel?</h2>
+      <input type="checkbox" name="travel" id="plane"><label for="plane">Plane</label>
+      <input type="checkbox" name="travel" id="bus"><label for="bus">Bus</label>
+      <input type="checkbox" name="travel" id="car"><label for="car">Car</label>
+      <input type="checkbox" name="travel" id="walking"><label for="walking">Walking</label>
+      <input type="checkbox" name="travel" id="train"><label for="train">Train</label>
+      <button type="submit">Submit</button>
+      </div>
+      </form>
     </div>
   </body>
 </html>
